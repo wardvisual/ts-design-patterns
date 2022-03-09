@@ -1,0 +1,21 @@
+{
+    "name": "memento",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./src/index.js",
+    "scripts": {
+        "start": "npx ts-node -T ./src/index.ts"
+    },
+    "keywords": [],
+    "repository": {
+        "git": "https://github.com/wardvisual/ts-memento-applications.git"
+    },
+    "author": "@wardvisual",
+    "license": "MIT",
+    "devDependencies": {
+        "@tsconfig/node17": "^1.0.0",
+        "@types/node": "^17.0.21",
+        "ts-node": "^10.7.0",
+        "typescript": "^4.6.2"
+    }
+}
