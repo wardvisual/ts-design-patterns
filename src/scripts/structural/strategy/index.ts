@@ -4,13 +4,13 @@ import Logger from "../../../helpers/logger";
 class UnionBank implements Banks {
   public pay(amount: number): void {
     console.log(
-      `\nDescription: The amount of ${amount} has been processed by ${this.constructor}\nStatus: Paid`
+      `\nDescription: The amount of ${amount} has been processed by ${this.constructor.name}\nStatus: Paid`
     );
   }
 
   public refund(amount: number): void {
     console.log(
-      `\nDescription: The amount of ${amount} has been processed by ${this.constructor}\nStatus: Refunded`
+      `\nDescription: The amount of ${amount} has been processed by ${this.constructor.name}\nStatus: Refunded`
     );
   }
 }
@@ -18,13 +18,13 @@ class UnionBank implements Banks {
 class Pnb implements Banks {
   public pay(amount: number): void {
     console.log(
-      `\nDescription: The amount of ${amount} has been processed by ${this.constructor}\nStatus: Paid`
+      `\nDescription: The amount of ${amount} has been processed by ${this.constructor.name}\nStatus: Paid`
     );
   }
 
   public refund(amount: number): void {
     console.log(
-      `\nDescription: The amount of ${amount} has been processed by ${this.constructor}\nStatus: Refunded`
+      `\nDescription: The amount of ${amount} has been processed by ${this.constructor.name}\nStatus: Refunded`
     );
   }
 }
