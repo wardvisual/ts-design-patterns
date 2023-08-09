@@ -1,5 +1,5 @@
 {
-    "name": "memento",
+    "name": "ts-design-patterns",
     "version": "1.0.0",
     "description": "",
     "main": "./src/index.ts",
