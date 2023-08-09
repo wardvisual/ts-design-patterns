@@ -1,10 +1,10 @@
-import { AdapterFactory } from "./adapters";
+import { DatabaseAdapterFactory } from "./adapters";
 
 export class AdapterDatabaseUseCase {
   db: any;
 
   constructor() {
-    this.db = new AdapterFactory(AdapterFactory.driver.REDIS);
+    this.db = new DatabaseAdapterFactory(DatabaseAdapterFactory.driver.REDIS);
   }
 
   public register(name: string, password: string): void {

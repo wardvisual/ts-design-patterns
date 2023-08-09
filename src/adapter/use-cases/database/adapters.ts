@@ -25,7 +25,7 @@ export namespace DatabasesAdapters {
 }
 
 /* Adapter Factory */
-export class AdapterFactory implements Adapterable {
+export class DatabaseAdapterFactory implements Adapterable {
   adapter: unknown = null;
 
   static driver: { MYSQL: string; REDIS: string; MONGODB: string } = {
@@ -35,10 +35,10 @@ export class AdapterFactory implements Adapterable {
   };
 
   constructor(public driver: string) {
-    if (driver === AdapterFactory.driver.MONGODB) {
+    if (driver === DatabaseAdapterFactory.driver.MONGODB) {
       this.adapter = new DatabasesAdapters.MongoDB();
     }
-    if (driver === AdapterFactory.driver.REDIS) {
+    if (driver === DatabaseAdapterFactory.driver.REDIS) {
       this.adapter = new DatabasesAdapters.RedisDB();
     }
 
